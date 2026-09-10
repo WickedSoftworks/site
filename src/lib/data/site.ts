@@ -30,7 +30,7 @@ export const projects: Project[] = [
 		name: 'evermind',
 		summary:
 			'The beautiful, sleek, online student planner. Made for students, by students.',
-		status: 'paused',
+		status: 'active',
 		tech: ['TypeScript', 'Next.js', 'TailwindCSS', 'Supabase', 'Vercel'],
 		repo: "https://github.com/WickedSoftworks/evermind"
 	},
