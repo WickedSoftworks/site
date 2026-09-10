@@ -37,7 +37,7 @@ export const projects: Project[] = [
 	{
 		name: 'winstro',
 		summary:
-			'The ultimate, open-source, cross-platform, lightweight, and fast music player.',
+			'Make Windows have the reproducibility of Linux',
 		status: 'shipped',
 		tech: ['TypeScript', 'Bun', ],
 		repo: "https://github.com/WickedSoftworks/winstro"
