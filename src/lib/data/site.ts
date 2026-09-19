@@ -1,4 +1,5 @@
 export const GITHUB_ORG = 'https://github.com/WickedSoftworks';
+export const DISCORD_INVITE = 'https://discord.gg/JSGUmxHukh';
 
 export type ProjectStatus = 'active' | 'seeking' | 'paused' | 'shipped' | 'planned';
 export const STATUS_LABEL: Record<ProjectStatus, string> = {
@@ -49,5 +50,13 @@ export const projects: Project[] = [
 		status: 'planned',
 		tech: ['TypeScript', 'Next.js', 'TailwindCSS', 'Docker', 'Prisma'],
 		repo: "https://github.com/WickedSoftworks/borealis"
+	},
+	{
+		name: 'azure',
+		summary:
+			'A FOSS version of Scarlet for managing color presets no matter the GPU vendor or game',
+		status: 'active',
+		tech: ['TypeScript', 'Tauri', 'TailwindCSS', 'Bun'],
+		repo: "https://github.com/WickedSoftworks/azure"
 	}
 ];
