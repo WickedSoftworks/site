@@ -6,8 +6,9 @@
 	import ModeToggle from './ModeToggle.svelte';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
-	import { GITHUB_ORG } from '$lib/data/site';
+	import { DISCORD_INVITE, GITHUB_ORG } from '$lib/data/site';
 	import Github from '$lib/components/site/GithubIcon.svelte';
+	import Discord from '$lib/components/site/DiscordIcon.svelte';
 
 	// `as const` keeps the hrefs as literal route types, which is what
 	// SvelteKit's typed `resolve` expects.
@@ -60,6 +61,15 @@
 		</nav>
 
 		<div class="flex shrink-0 items-center gap-1">
+			<a
+				href={DISCORD_INVITE}
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Discord server"
+				class="grid size-8 place-items-center rounded-md text-fg-muted transition-colors duration-150 hover:bg-surface-2 hover:text-fg"
+			>
+				<Discord class="size-4" />
+			</a>
 			<a
 				href={GITHUB_ORG}
 				target="_blank"
